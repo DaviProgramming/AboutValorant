@@ -1,0 +1,21 @@
+<section>
+
+
+    <div class="container">
+        <div class="title">Agentes</div>
+
+        <div class="agentes" *ngIf="exibir == 'agentes'">
+            <a class="agente" *ngFor="let agente of agentesData" href="/agentes/{{agente.uuid}}" target="_blank">
+                <div class="agente-name">
+                    <span>{{agente.displayName}}</span>
+                </div>
+                <div class="agente-img">
+                    <img src="{{agente.fullPortrait}}" alt="">
+                </div>
+            </a>
+        </div>
+    </div>
+
+    
+
+</section>

@@ -1,0 +1,34 @@
+<section>
+    <div class="container">
+        <div class="title">
+            <span>informações do agente</span> <span>{{agente.displayName}}</span>
+        </div>
+        <div class="agente">
+            <div class="agente-image">
+                <img src="{{agente.fullPortrait}}" alt="{{agente.displayName}}">
+            </div>
+            <div class="agente-description">
+                <p>{{agente.description}}</p>
+            </div>
+            <div class="agente-role">
+                <div class="sub-title">Role:</div>
+                <div class="info-role">
+                    <div class="title-role"><img src="{{agente.role.displayIcon}}" alt=""><span>{{agente.role.displayName}}</span></div>
+                    <p class="description">{{agente.role.description}}</p>
+                    
+                </div>
+
+            </div>
+            <div class="agente-abilities">
+                <div class="sub-title">Abilites:</div>
+                <div class="abilities">
+                    <div class="ability"*ngFor="let ability of agente.abilities">
+                        <div class="ability-image"><img src="{{ability.displayIcon}}" alt=""></div>
+                        <div class="ability-name">{{ability.displayName}}</div>
+                        <div class="ability-description">{{ability.description}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

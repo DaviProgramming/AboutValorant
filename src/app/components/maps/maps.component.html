@@ -1,0 +1,15 @@
+<section>
+    <div class="container">
+        <div class="title">Mapas</div>
+        <div class="maps">
+            <div class="map" *ngFor="let map of mapas">
+                <div class="map-text">
+                    <div class="map-name">{{map.displayName}}</div>
+                    <div class="map-description">{{map.narrativeDescription}}</div>
+    
+                </div>
+                <div class="map-image"><img src="{{map.splash}}" alt="{{map.displayName}}"></div>
+            </div>
+        </div>
+    </div>
+</section>
