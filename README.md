@@ -1,27 +1,42 @@
-# Aboutvalorant
+# About Valorant
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
+![printapp](https://i.imgur.com/ARTEtTA.png)
 
-## Development server
+O **About Valorant** é um projeto em Angular que fornece informações detalhadas sobre o popular jogo Valorant. Ele se conecta a uma API externa para buscar dados atualizados sobre agentes, mapas e estatísticas do jogo. Este projeto também faz uso de recursos avançados do Angularr.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Principais Recursos
 
-## Code scaffolding
+- **Exploração de Agentes**: Saiba mais sobre os agentes disponíveis no jogo, incluindo suas habilidades e histórias de fundo.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Detalhes dos Mapas**: Explore os mapas do Valorant, obtenha informações sobre pontos de interesse e estratégias de jogo.
 
-## Build
+- **Estatísticas em Tempo Real**: Acompanhe as estatísticas em tempo real, incluindo taxas de vitória, escolhas de agentes populares e muito mais.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Interface Amigável**: Uma interface intuitiva e fácil de usar para navegar pelas informações.
 
-## Running unit tests
+- **API Externa Confiável**: Dados atualizados diretamente da API oficial do Valorant.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Angular Router**: Navegue pelas informações do jogo de forma dinâmica e intuitiva com o Angular Router.
 
-## Running end-to-end tests
+## Tecnologias Utilizadas
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- **Angular**: A estrutura Angular foi usada para criar o front-end do projeto, incluindo o roteamento dinâmico com o Angular Router.
 
-## Further help
+- **API do Valorant**: Os dados do jogo são obtidos por meio da API oficial do Valorant.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Uso
+
+1. Clone o repositório:
+   
+  ``` git clone https://github.com/DaviProgramming/AboutValorant)  ```
+
+2. Instale as dependências:
+
+  ``` npm install  ```
+
+3. Inicie o servidor de desenvolvimento:
+
+  ``` ng serve  ```
+
+4. Acesse a aplicação no seu navegador em `http://localhost:4200/`
+
