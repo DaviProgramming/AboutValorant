@@ -8,6 +8,7 @@ aside {
     z-index: 2;
     box-shadow: 0 0 30px -10px black;
     font-weight: 600;
+    z-index: 4;
 }
 
 
@@ -81,6 +82,23 @@ aside ul li a span {
     aside{
         display: none;
         width: 100vw;
+    }
+
+    aside.active{
+        display: flex!important;
+        animation: aside-left 0.1s;
+    }
+
+    @keyframes aside-left {
+
+        from{
+            left: -300%;
+        }
+
+        to{
+            left: 0;
+        }
+        
     }
     
 }

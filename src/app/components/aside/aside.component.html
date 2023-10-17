@@ -1,4 +1,4 @@
-<aside>
+<aside [ngClass]="{'active' : active == true}">
     <div class="aside-content">
         <ul>
             <li [ngClass]="{'active' : page == 'home' || page == 'agente'}"><a href="/"><i class="fa-solid fa-users"></i><span>Agentes</span></a></li>

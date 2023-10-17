@@ -15,5 +15,6 @@ export class HomeComponent {
     this.dataService.dadosCompartilhados = 'home';
     
   }
-
+    valorParaAside: boolean = false;
+ 
 }
