@@ -12,7 +12,7 @@ nav{
 }
 
 .navbar-content{
-    padding-left: 30px;
+    padding-left: 33px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -33,4 +33,17 @@ nav{
 .navbar-content .logo img{
     width: 40px;
 }
+
+.logo-text{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    cursor: default;
+}
+
+.logo-text i{
+    cursor: pointer;
+}
+
 

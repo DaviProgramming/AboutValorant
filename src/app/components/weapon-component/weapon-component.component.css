@@ -15,8 +15,6 @@ a{
     margin-left: 300px;
     width: 81%;
     height: 100%;
-    overflow: hidden;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -173,4 +171,35 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .container{
+        margin-left: 30px;
+        width: 82%;
+        overflow:unset;
+
+    }
+
+    .weapons{
+        grid-template-columns: repeat(1,1fr)!important;
+    }
+
+    .weapon{
+        width: 100%;
+        overflow: hidden!important;
+    }
+
+    .weapon-skins{
+        width: 70vw;
+        height: 100vh;
+        grid-template-columns: repeat(1,1fr);
+        padding: 90px 40px;
+    }
+
+    .close-modal span{
+        font-size: 1.7rem;
+    }
 }

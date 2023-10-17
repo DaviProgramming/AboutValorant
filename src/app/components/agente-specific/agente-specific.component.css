@@ -129,3 +129,21 @@ a{
 .container .ability-image img{
     width: 50px;
 }
+
+@media screen and (max-width: 768px) {
+
+    .container{
+        margin-left: 30px;
+    }
+
+    .abilities{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+    }
+
+    .agente-image img{
+        height: 300px!important;
+    }
+    
+}

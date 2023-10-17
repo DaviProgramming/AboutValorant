@@ -74,3 +74,13 @@ aside ul li a span {
     }
 
 }
+
+
+@media screen and (max-width: 768px) {
+
+    aside{
+        display: none;
+        width: 100vw;
+    }
+    
+}
