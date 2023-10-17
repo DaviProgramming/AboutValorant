@@ -37,7 +37,6 @@ export class WeaponComponentComponent {
 
       this.armas = response.data;
 
-      console.log(this.armas);
 
     })
 

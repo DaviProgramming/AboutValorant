@@ -1,4 +1,4 @@
-aside{
+aside {
     height: 100vh;
     min-width: 230px;
     width: 12vw;
@@ -11,8 +11,8 @@ aside{
 }
 
 
-aside ul{
-    padding: 20px 30px ;
+aside ul {
+    padding: 20px 30px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -20,18 +20,23 @@ aside ul{
 
 }
 
-aside ul li{
+aside ul li {
     position: relative;
     padding: 8px;
+    width: max-content;
 
 }
 
-aside ul li.active{
+aside ul li.active {
     background: var(--dark-red);
     border-radius: 0.435rem;
+    width: max-content;
 }
 
-aside ul li:not(.active):hover:before{
+
+
+
+aside ul li:not(.active):hover:before {
     position: absolute;
     content: '';
     bottom: -9px;
@@ -39,9 +44,10 @@ aside ul li:not(.active):hover:before{
     height: 2px;
     border-radius: 0.435rem;
     background: var(--white-color);
+    animation: animationFade 0.2s ease-in-out;
 }
 
-aside ul li a{
+aside ul li a {
     display: flex;
     flex-direction: row;
     gap: 15px;
@@ -50,8 +56,21 @@ aside ul li a{
 
 }
 
-aside ul li a span{
+aside ul li a span {
     font-size: 0.9rem;
     font-weight: 700;
     white-space: nowrap;
+}
+
+
+@keyframes animationFade {
+
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+
 }
