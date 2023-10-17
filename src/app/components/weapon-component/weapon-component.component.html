@@ -1,0 +1,40 @@
+<section>
+    <div class="container">
+        <div class="title">Armas</div>
+        <div class="weapons">
+            <div class="weapon" *ngFor="let arma of armas">
+                <div class="weapon-name">{{arma.displayName}}</div>
+                <div class="weapon-image"> <img src="{{arma.displayIcon}}" alt=""></div>
+                <div class="weapon-infos">
+                    <div class="weapon-infos-category">
+                        Category: {{arma.shopData.category}}
+                    </div>
+                    <div class="weapon-infos-price">
+                        Price: {{arma.shopData.cost}}
+                    </div>
+                    <div class="see-skins">
+                        <button type="button" (click)="showDiv(arma.uuid)">See Skins</button>
+                    </div>
+                </div>
+                <div class="weapon-skins" *ngIf="divAtiva === arma.uuid" >
+
+
+                    <div class="close-modal" (click)="showDiv(arma.uuid)">
+                        x <span>skins {{arma.displayName}}</span>
+                    </div>
+
+
+                    <div class="weapon-skin" *ngFor="let skin of arma.skins" >
+                        <div class="weapon-skin-name">
+                            {{skin.displayName}}
+                        </div>
+                        <div class="weapon-skin-img">
+                            <img src="{{skin.displayIcon}}" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

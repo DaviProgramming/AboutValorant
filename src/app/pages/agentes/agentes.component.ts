@@ -1,7 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 import { AgentesSpecificService } from 'src/app/services/agentes-specific.service';
+
+import { ActualPageService } from 'src/app/services/actual-page.service';
+
 
 
 @Component({
@@ -11,8 +14,13 @@ import { AgentesSpecificService } from 'src/app/services/agentes-specific.servic
 })
 export class AgentesComponent {
 
-  constructor(private route: ActivatedRoute, private AgentesSpecificService: AgentesSpecificService) {
-    // Você pode acessar os parâmetros da URL aqui.
+  constructor(private dataService: ActualPageService) { }
+
+
+  ngOnInit() {
+
+    this.dataService.dadosCompartilhados = 'agente';
+    
   }
 
 

@@ -4,7 +4,7 @@
     <div class="container">
         <div class="title">Agentes</div>
 
-        <div class="agentes" *ngIf="exibir == 'agentes'">
+        <div class="agentes" >
             <a class="agente" *ngFor="let agente of agentesData" href="/agentes/{{agente.uuid}}" target="_blank">
                 <div class="agente-name">
                     <span>{{agente.displayName}}</span>

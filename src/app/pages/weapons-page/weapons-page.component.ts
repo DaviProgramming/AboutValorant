@@ -1,18 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { ActualPageService } from 'src/app/services/actual-page.service';
 
+
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-weapons-page',
+  templateUrl: './weapons-page.component.html',
+  styleUrls: ['./weapons-page.component.css']
 })
-export class HomeComponent {
+export class WeaponsPageComponent {
 
   constructor(private dataService: ActualPageService) { }
 
   ngOnInit() {
 
-    this.dataService.dadosCompartilhados = 'home';
+    this.dataService.dadosCompartilhados = 'armas';
     
   }
 

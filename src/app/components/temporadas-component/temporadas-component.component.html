@@ -1,0 +1,14 @@
+<section>
+    <div class="container">
+        <div class="title">Temporadas</div>
+        <div class="temporadas">
+            <div class="temporada" *ngFor="let temporada of temporadas">
+                <div class="temporada-name">{{temporada.displayName}}</div>
+                <div class="temporada-data">
+                    <span>Start: {{temporada.startTime | date: 'dd/MM/yyyy'}}</span>
+                    <span>End: {{temporada.endTime | date: 'dd/MM/yyyy'}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

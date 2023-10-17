@@ -14,6 +14,14 @@ import { HomeComponent } from './pages/home/home.component';
 import { AgenteSpecificComponent } from './components/agente-specific/agente-specific.component';
 import { MapasComponent } from './pages/mapas/mapas.component';
 import { MapsComponent } from './components/maps/maps.component';
+import { WeaponsPageComponent } from './pages/weapons-page/weapons-page.component';
+import { WeaponComponentComponent } from './components/weapon-component/weapon-component.component';
+import { ElosPageComponent } from './pages/elos-page/elos-page.component';
+import { ElosComponentComponent } from './components/elos-component/elos-component.component';
+import { TemporadasPageComponent } from './pages/temporadas-page/temporadas-page.component';
+import { TemporadasComponentComponent } from './components/temporadas-component/temporadas-component.component';
+import { CardsPlayersServiceComponent } from './components/cards-players-service/cards-players-service.component';
+import { CardPlayersPageComponent } from './pages/card-players-page/card-players-page.component';
 
 @NgModule({
   declarations: [
@@ -26,12 +34,20 @@ import { MapsComponent } from './components/maps/maps.component';
     HomeComponent,
     AgenteSpecificComponent,
     MapasComponent,
-    MapsComponent
+    MapsComponent,
+    WeaponsPageComponent,
+    WeaponComponentComponent,
+    ElosPageComponent,
+    ElosComponentComponent,
+    TemporadasPageComponent,
+    TemporadasComponentComponent,
+    CardsPlayersServiceComponent,
+    CardPlayersPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

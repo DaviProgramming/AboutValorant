@@ -1,0 +1,17 @@
+<section>
+    <div class="container">
+        <div class="title">Elos</div>
+        <div class="elos">
+            <div class="elo" *ngFor="let elo of elos.tiers" [ngClass]="{'active' : elo.largeIcon}">
+                <div *ngIf="elo.largeIcon" >
+                    <div class="elo-name">
+                        {{elo.tierName}}
+                    </div>
+                    <div class="elo-image">
+                        <img src="{{elo.largeIcon}}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

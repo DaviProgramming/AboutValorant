@@ -13,7 +13,6 @@ export class MainComponent implements OnInit {
     this.getData();
   }
 
-  exibir: string = 'agentes';
   agentesData: any = [];
 
   constructor(private AgentesService: AgentesService){
@@ -21,9 +20,6 @@ export class MainComponent implements OnInit {
   }
 
   getData(){
-
-    if(this.exibir == 'agentes'){
-
 
 
       this.AgentesService.getAgentes().subscribe((response : any) => {
@@ -36,7 +32,7 @@ export class MainComponent implements OnInit {
 
       })
 
-    }
+   
 
   }
 

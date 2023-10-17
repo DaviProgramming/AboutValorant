@@ -1,13 +1,13 @@
 <aside>
     <div class="aside-content">
         <ul>
-            <li ><a href="/"><i class="fa-solid fa-users"></i><span>Agentes</span></a></li>
-            <li class="active"><a href="/mapas"><i class="fa-solid fa-map"></i><span>Mapas</span></a></li>
-            <li><a href=""><i class="fa-solid fa-gun"></i><span>Armas</span></a></li>
-            <li><a href=""><i class="fa-solid fa-medal"></i><span>Elos</span></a></li>
-            <li><a href=""><i class="fa-solid fa-calendar"></i><span>Temporadas</span></a></li>
-            <li><a href=""><i class="fa-solid fa-id-card-clip"></i><span>Cards de jogadores</span></a></li>
-            <li><a href=""><i class="fa-regular fa-closed-captioning"></i><span>Titulos de jogadores</span></a></li>
+            <li [ngClass]="{'active' : page == 'home' || page == 'agente'}"><a href="/"><i class="fa-solid fa-users"></i><span>Agentes</span></a></li>
+            <li [ngClass]="{'active' : page == 'mapas'}"><a href="/mapas"><i class="fa-solid fa-map"></i><span>Mapas</span></a></li>
+            <li [ngClass]="{'active' : page == 'armas'}"><a href="/armas"><i class="fa-solid fa-gun"></i><span>Armas</span></a></li>
+            <li [ngClass]="{'active' : page == 'elos'}"><a href="/elos"><i class="fa-solid fa-medal"></i><span>Elos</span></a></li>
+            <li [ngClass]="{'active' : page == 'temporadas'}"><a href="/temporadas"><i class="fa-solid fa-calendar"></i><span>Temporadas</span></a></li>
+            <li [ngClass]="{'active' : page == 'cards'}"><a href="/cards"><i class="fa-solid fa-id-card-clip"></i><span>Cards de jogadores</span></a></li>
+            <li [ngClass]="{'active' : page == 'titulos'}"><a href="/titulos"><i class="fa-regular fa-closed-captioning"></i><span>Titulos de jogadores</span></a></li>
         </ul>
     </div>
 </aside>

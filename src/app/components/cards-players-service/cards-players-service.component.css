@@ -1,0 +1,55 @@
+section{
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.container{
+    margin-top: 112px;
+    margin-bottom: 70px;
+    margin-left: 300px;
+    width: 81%;
+    height: 100%;
+    overflow: hidden;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.container .title{
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+    cursor: default;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+
+.cards .card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cards .card .card-name{
+    font-weight: 700;
+}
+
+.cards img{
+    width: 200px;
+    height: 400px;
+}
